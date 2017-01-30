@@ -26,6 +26,6 @@ Nell'esempio inoltre, e' presente la configurazione maven per generare il Jar da
 ## SpringBootRestExample ##
 In questo progetto è presente un esempio di servizio REST (HelloWorldRestService) implementato con SpringBoot.<br>
 L'applicazione implementata e' compatibile solamente con Application Server che supportano le Servlet 3.0, se cosi' non fosse e' sufficiente creare nel progetto un file web.xml e configurare il carico dell'ApplicationContext con una DispatcherServlet.<br>
-Per maggiori informazioni consultare la <a href="http://docs.spring.io/spring-boot/docs/current/reference/html/howto-traditional-deployment.html">documentazione ufficiale</a>.
+Per maggiori informazioni consultare la <a href="http://docs.spring.io/spring-boot/docs/current/reference/html/howto-traditional-deployment.html">documentazione ufficiale</a>.<br>
 <b>N.b. nel file POM.xml sono presenti tutte le configurazioni necessarie alla generazione del file WAR.</b>
 
