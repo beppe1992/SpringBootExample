@@ -35,3 +35,4 @@ Nel nostro esempio abbiamo utilizzato logback, ma il framework ricerca automatic
 - Logback -> logback-spring.xml, logback-spring.groovy, logback.xml or logback.groovy<br>
 - Log4j2 -> log4j2-spring.xml or log4j2.xml<br>
 - JDK (Java Util Logging) -> logging.properties<br>
+<b>N.b. come per gli esempi sopra riportati i file possono essere "profilati" attraverso l'utilizzo dei profile di Spring Boot.</b><br>
