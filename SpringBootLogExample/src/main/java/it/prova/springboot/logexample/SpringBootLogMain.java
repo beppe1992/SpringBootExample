@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * Hello world!
  * 
  */
-
+@SpringBootApplication
 public class SpringBootLogMain {
 
 	private static final Logger logger = LoggerFactory
