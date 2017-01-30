@@ -2,19 +2,21 @@
 In questo progetto si sono raccolti alcuni esempi di utilizzo di SpringBoot
 
 ## SpringBootBatchExample ##
-In questo progetto è presente un esempio di batch implementato con SpringBoot, esso e' composto da 2 step:<br>
+In questo progetto Ã¨ presente un esempio di batch implementato con SpringBoot, esso e' composto da 2 step:<br>
 - step contenente una tasklet che scrive a console un semplice messaggio
 - step contenente un chunk di esempio che legge da una lista statica e scrive quanto letto
 
 ## SpringBootBatchWithProfileExample ##
-In questo progetto è presente un esempio di batch implementato con SpringBoot ed utilizzando la profilazione del framework.<br>
+In questo progetto Ã¨ presente un esempio di batch implementato con SpringBoot ed utilizzando la profilazione del framework.<br>
 Nel progetto sono presenti 2 profili: produzione e test<br>
-- se la classe di mail viene lanciata con il profilo produzione (--spring.profiles.active=produzione) viene iniettato il datasource di produzione<br>
-- se la classe di mail viene lanciata con il profilo produzione (--spring.profiles.active=test) viene iniettato il datasource di test<br>
+- se la classe di mail viene lanciata con il profilo produzione (--spring.profiles.active=produzione) viene iniettato il datasource di produzione e la property letta dal file di properties di produzione<br>
+- se la classe di mail viene lanciata con il profilo produzione (--spring.profiles.active=test) viene iniettato il datasource di test e la property letta dal file di properties di test<br>
+
 In base al profilo passato vengono iniettati alla Tasklet "SysoutTasklet" due diverse proprieta':<br>
 - datasource<br>
 - propertiesLetta da un file di properties applicativo<br>
 Se non viene passato un profilo tra i due gestiti il batch va in ABEND in quanto non sono presenti configurazioni di default<br><br>
+
 Nell'esempio inoltre, e' presente la configurazione maven per generare il Jar da distribuire, di seguito le istruzioni:<br>
 - lanciare il comando mvn clean install sul progetto
 - generare il jar attraverso il comando mvn package 
