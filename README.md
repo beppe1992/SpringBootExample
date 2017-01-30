@@ -27,5 +27,11 @@ Nell'esempio inoltre, e' presente la configurazione maven per generare il Jar da
 In questo progetto è presente un esempio di servizio REST (HelloWorldRestService) implementato con SpringBoot.<br>
 L'applicazione implementata e' compatibile solamente con Application Server che supportano le Servlet 3.0, se cosi' non fosse e' sufficiente creare nel progetto un file web.xml e configurare il carico dell'ApplicationContext con una DispatcherServlet.<br>
 Per maggiori informazioni consultare la <a href="http://docs.spring.io/spring-boot/docs/current/reference/html/howto-traditional-deployment.html">documentazione ufficiale</a>.<br>
-<b>N.b. nel file POM.xml sono presenti tutte le configurazioni necessarie alla generazione del file WAR.</b>
+<b>N.b. nel file POM.xml sono presenti tutte le configurazioni necessarie alla generazione del file WAR.</b><br>
 
+## SpringBootLogExample##
+In questo progetto è presente un esempio di come SpringBoot gestisce il logging fornito dal framework stesso.<br>
+Nel nostro esempio abbiamo utilizzato logback, ma il framework ricerca automaticamente i seguenti file di configurazione:<br>
+- Logback -> logback-spring.xml, logback-spring.groovy, logback.xml or logback.groovy<br>
+- Log4j2 -> log4j2-spring.xml or log4j2.xml<br>
+- JDK (Java Util Logging) -> logging.properties<br>
