@@ -25,7 +25,7 @@ import org.springframework.context.annotation.Configuration;
  * @author arx50011
  * 
  */
-
+//VIENE ESCLUSA L'AUTOCONFIGURAZIONE DEL DATASOURCE IN QUANTO QUESTO JOB NON HA ALCUN DATASOURCE
 @EnableBatchProcessing
 @EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class })
 @ComponentScan({ "it.prova.springboot.batchwithprofiles.*" })
