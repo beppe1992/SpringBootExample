@@ -1,4 +1,4 @@
-package it.prova.springboot.jdbcexample.service;
+package it.prova.springboot.jdbcexample.dao;
 
 import it.prova.springboot.jdbcexample.pojo.TabellaProva;
 
@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-public class TabellaProvaService {
+public class TabellaProvaDao {
 
 	@Autowired
 	private JdbcTemplate jdbcTemplate;

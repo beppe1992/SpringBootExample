@@ -24,4 +24,9 @@ public class TabellaProva {
 		this.descr = descr;
 	}
 
+	@Override
+	public String toString() {
+		return "TabellaProva [id=" + id + ", descr=" + descr + "]";
+	}
+
 }

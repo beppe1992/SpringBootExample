@@ -29,7 +29,7 @@ L'applicazione implementata e' compatibile solamente con Application Server che 
 Per maggiori informazioni consultare la <a href="http://docs.spring.io/spring-boot/docs/current/reference/html/howto-traditional-deployment.html">documentazione ufficiale</a>.<br>
 <b>N.b. nel file POM.xml sono presenti tutte le configurazioni necessarie alla generazione del file WAR.</b><br>
 
-## SpringBootLogExample##
+## SpringBootLogExample ##
 In questo progetto è presente un esempio di come SpringBoot gestisce il logging fornito dal framework stesso.<br>
 Nel nostro esempio abbiamo utilizzato logback, ma il framework ricerca automaticamente i seguenti file di configurazione:<br>
 - Logback -> logback-spring.xml, logback-spring.groovy, logback.xml or logback.groovy<br>
@@ -37,8 +37,8 @@ Nel nostro esempio abbiamo utilizzato logback, ma il framework ricerca automatic
 - JDK (Java Util Logging) -> logging.properties<br>
 <b>N.b. come per gli esempi sopra riportati i file possono essere "profilati" attraverso l'utilizzo dei profile di Spring Boot.</b><br>
 
-## SpringBootJdbcExample##
+## SpringBootJdbcExample ##
 In questo progetto è presente un esempio di come accedere ad un database in RAM di test attraverso SpringBoot.<br>
 Il framework crea di default un db hsql in RAM senza la necessità di configurare nulla, ed individua automaticamente i files schema.sql e data.sql per creare e popolare il database.<br>
-Per testare il servizio collegarsi al link http://localhost:8080/<br>
+Per testare il servizio utilizzare la classe SpringBootJdbcTest<br>
 E' inoltre possibile configurare un database reale, per informazioni vedi quanto indicato nel file /src/main/resources/application.properties<br>
